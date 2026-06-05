@@ -1,0 +1,10 @@
+# Qezta
+
+> Qezta is the landing site for qezta.com.
+
+## Site
+
+- [Home](https://qezta.com/): Marketing and landing page for Qezta.
+- [Divit Mittal](https://divit.qezta.com/): Personal portfolio site connected to Qezta.
+- [Sitemap](https://qezta.com/sitemap.xml): XML sitemap for crawlable site URLs.
+- [Robots](https://qezta.com/robots.txt): Crawler access policy.
