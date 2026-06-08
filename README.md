@@ -53,7 +53,3 @@ pnpm check      # svelte-check
 pnpm lint       # prettier + eslint
 pnpm build      # static site build
 ```
-
-## License
-
-MIT — see [LICENSE](./LICENSE).
