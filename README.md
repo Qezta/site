@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/site-qezta.com-orange?style=for-the-badge&logo=svelte&logoColor=white" alt="site" />
     </a>
     <a href="https://github.com/Qezta/site/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/license-MIT-orange?style=for-the-badge&logo=unlicense&logoColor=white" alt="license"/>
+  <img src="https://img.shields.io/badge/license-HONCL--1.0-orange?style=for-the-badge&logo=unlicense&logoColor=white" alt="license"/>
     </a>
     <a href="https://svelte.dev/">
   <img src="https://img.shields.io/badge/SvelteKit-static-orange?style=for-the-badge&logo=svelte&logoColor=white" alt="sveltekit"/>
