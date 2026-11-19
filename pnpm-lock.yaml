@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@qezta/ui':
-        specifier: github:Qezta/ui#d17664ffd406948bdedb023a5bcc38386e9d7e09
-        version: https://codeload.github.com/Qezta/ui/tar.gz/d17664ffd406948bdedb023a5bcc38386e9d7e09(svelte@5.56.3(@typescript-eslint/types@8.59.3))(three@0.178.0)
+        specifier: github:Qezta/ui#a1e55d937fef4116edae2e80afea355a757953fe
+        version: https://codeload.github.com/Qezta/ui/tar.gz/a1e55d937fef4116edae2e80afea355a757953fe(svelte@5.56.3(@typescript-eslint/types@8.59.3))(three@0.178.0)
       '@vercel/analytics':
         specifier: ^1.5.0
         version: 1.6.1(@sveltejs/kit@2.63.1(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.3(@typescript-eslint/types@8.59.3))(vite@8.0.16(@types/node@24.13.1)(sass@1.99.0)))(svelte@5.56.3(@typescript-eslint/types@8.59.3))(typescript@5.9.3)(vite@8.0.16(@types/node@24.13.1)(sass@1.99.0)))(svelte@5.56.3(@typescript-eslint/types@8.59.3))
@@ -539,8 +539,8 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@qezta/ui@https://codeload.github.com/Qezta/ui/tar.gz/d17664ffd406948bdedb023a5bcc38386e9d7e09':
-    resolution: {tarball: https://codeload.github.com/Qezta/ui/tar.gz/d17664ffd406948bdedb023a5bcc38386e9d7e09}
+  '@qezta/ui@https://codeload.github.com/Qezta/ui/tar.gz/a1e55d937fef4116edae2e80afea355a757953fe':
+    resolution: {tarball: https://codeload.github.com/Qezta/ui/tar.gz/a1e55d937fef4116edae2e80afea355a757953fe}
     version: 0.0.1
     peerDependencies:
       svelte: ^5.56.3
@@ -2153,7 +2153,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@qezta/ui@https://codeload.github.com/Qezta/ui/tar.gz/d17664ffd406948bdedb023a5bcc38386e9d7e09(svelte@5.56.3(@typescript-eslint/types@8.59.3))(three@0.178.0)':
+  '@qezta/ui@https://codeload.github.com/Qezta/ui/tar.gz/a1e55d937fef4116edae2e80afea355a757953fe(svelte@5.56.3(@typescript-eslint/types@8.59.3))(three@0.178.0)':
     dependencies:
       '@fortawesome/free-brands-svg-icons': 6.7.2
       '@fortawesome/free-solid-svg-icons': 6.7.2

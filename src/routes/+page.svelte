@@ -20,7 +20,7 @@
   </p>
 </div>
 
-<SourceLink />
+<SourceLink repo="https://github.com/Qezta/site" />
 
 <style lang="scss">
   .placeholder-container {
