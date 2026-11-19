@@ -1,6 +1,6 @@
 # Sitemap generation
 
-Run `python3 scripts/generate_sitemap.py --base-url https://qezta.com/` from a
+Run `python3 scripts/generate_sitemap.py --base-url https://www.qezta.com/` from a
 checkout with full Git history and Python 3.9 or later. This writes
 `static/sitemap.xml`; no third-party packages are required.
 
