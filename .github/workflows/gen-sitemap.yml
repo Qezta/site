@@ -23,7 +23,7 @@ jobs:
     - name: Generate the sitemap
       run: |-
         PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_*.py'
-        python3 scripts/generate_sitemap.py --base-url https://qezta.com/
+        python3 scripts/generate_sitemap.py --base-url https://www.qezta.com/
     - name: Create or update sitemap pull request
       uses: peter-evans/create-pull-request@3ffccacd46053766916f087ce41d627c0b8cf2d1
       with:

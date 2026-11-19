@@ -39,7 +39,7 @@ _: {
           name = "Generate the sitemap";
           run = ''
             PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_*.py'
-            python3 scripts/generate_sitemap.py --base-url https://qezta.com/
+            python3 scripts/generate_sitemap.py --base-url https://www.qezta.com/
           '';
         }
         {
