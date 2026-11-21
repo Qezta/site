@@ -114,7 +114,7 @@
     padding: 1rem;
     border: 1px solid #555;
     border-radius: 0;
-    background: #090909;
+    background: #131313eb;
   }
 
   code {
@@ -157,7 +157,7 @@
     padding: 1rem;
     border: 1px solid #555;
     border-radius: 0;
-    background: #090909;
+    background: #131313eb;
   }
 
   dt {
@@ -185,6 +185,13 @@
     display: inline-flex;
     align-items: center;
     min-height: 44px;
+  }
+
+  @media (max-width: 768px) {
+    .ssh-access,
+    .contact-card {
+      background: rgb(13 13 13 / 88%);
+    }
   }
 
   @media (max-width: 480px) {
