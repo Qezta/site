@@ -1,5 +1,6 @@
 <script lang="ts">
   import SourceLink from "@qezta/ui/components/atoms/SourceLink.svelte";
+  import SiteFooter from "$lib/components/SiteFooter.svelte";
 
   const mainSiteUrl = "https://divit.qezta.com";
   const logoSrc = "/qezta.gif";
@@ -29,12 +30,6 @@
     >
   </p>
 
-  <nav class="ssh-access" aria-label="Qezta over SSH">
-    <a href="ssh://qezta@qezta.com">Explore Qezta over SSH</a>
-    <code>ssh qezta@qezta.com</code>
-    <span class="status">SSH access is being set up.</span>
-  </nav>
-
   <section class="contacts" aria-labelledby="contact-heading">
     <h2 id="contact-heading">Contact Qezta</h2>
     <p class="contact-note">
@@ -54,6 +49,8 @@
       General-contact alias: <a href="mailto:hi@qezta.com">hi@qezta.com</a>.
     </p>
   </section>
+
+  <SiteFooter />
 </div>
 
 <SourceLink repo="https://github.com/Qezta/site" />
@@ -102,31 +99,6 @@
 
   .link-paragraph a {
     overflow-wrap: anywhere;
-  }
-
-  .ssh-access {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem 1rem;
-    max-width: 40rem;
-    padding: 1rem;
-    border: 1px solid #555;
-    border-radius: 0;
-    background: #131313eb;
-  }
-
-  code {
-    font-family: monospace;
-    overflow-wrap: anywhere;
-    user-select: text;
-  }
-
-  .status {
-    flex-basis: 100%;
-    color: #aaa;
-    font-size: 0.8rem;
   }
 
   .contacts {
@@ -181,14 +153,7 @@
     font-size: 0.9rem;
   }
 
-  .ssh-access a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-  }
-
   @media (max-width: 768px) {
-    .ssh-access,
     .contact-card {
       background: rgb(13 13 13 / 88%);
     }
