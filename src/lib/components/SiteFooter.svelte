@@ -21,6 +21,29 @@
     },
   ];
 
+  const plannedProfiles = [
+    {
+      name: "OpenCollective",
+      path: "M12 1a11 11 0 1 0 7.78 18.78l-2.12-2.12A8 8 0 1 1 17.66 6.34l2.12-2.12A10.97 10.97 0 0 0 12 1Zm8.96 4.62-2.44 1.75a8 8 0 0 1 0 9.26l2.44 1.75a11 11 0 0 0 0-12.76Z",
+    },
+    {
+      name: "Patreon",
+      path: "M1.5 1.5h4v21h-4Zm13.75 0a7.75 7.75 0 1 0 0 15.5 7.75 7.75 0 0 0 0-15.5Z",
+    },
+    {
+      name: "X / Twitter",
+      path: "M18.9 1.5h3.3l-7.2 8.2 8.5 12.8h-6.7l-5.3-8.1-7.1 8.1H1.1l8.8-10L1.7 1.5h6.9l4.8 7.4Zm-1.2 19h1.8L7.6 3.4H5.7Z",
+    },
+    {
+      name: "Mastodon",
+      path: "M12 1.5c-4.3 0-8.6.3-9.4 4.3-.4 2.1-.4 5.2.1 7.4.6 3.3 3.4 4.1 6.1 4.4 1.1.1 2.2.1 3.2 0v2.5c-3 .7-5.3.2-7-1.1.3 2.2 2.6 3.5 5.5 3.5 4.4 0 9.8-1.1 10.6-7.9.4-2.7.4-6.5-.1-8.8-.8-4-5-4.3-9.1-4.3ZM6.3 6.3h2.3l.7 1.2 1.2-1.2h3l1.2 1.2.7-1.2h2.3v8.1h-2.4V9.5c0-1-.4-1.3-1-1.3s-1 .4-1 1.3v2.6h-2.4V9.5c0-.9-.4-1.3-1-1.3s-1 .3-1 1.3v4.9H6.3Z",
+    },
+    {
+      name: "Kaggle",
+      path: "M6 1h2.5v13.3L14.8 8h3.4l-6.8 6.6L18.5 23h-3.3l-5.5-6.8-1.2 1.2V23H6Z",
+    },
+  ];
+
   export let alternateLinks: AccessLink[] = [
     { name: "HTTP", href: "https://qezta.com" },
     { name: "SSH", href: "ssh://qezta@qezta.com" },
@@ -59,6 +82,23 @@
           </span>
         </a>
         <!-- eslint-enable svelte/no-navigation-without-resolve -->
+      {/each}
+      {#each plannedProfiles as profile (profile.name)}
+        <span
+          class="coming-soon"
+          role="img"
+          aria-label={`${profile.name} — coming soon`}
+          title={`${profile.name} — coming soon`}
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="currentColor"
+            aria-hidden="true"><path d={profile.path} /></svg
+          >
+          <span class="soon-label" aria-hidden="true">soon</span>
+        </span>
       {/each}
     </div>
   </nav>
@@ -99,6 +139,34 @@
 
   nav {
     gap: 0.25rem 0.5rem;
+  }
+
+  .links {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .coming-soon {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 44px;
+    min-height: 44px;
+    color: #999;
+  }
+
+  .coming-soon svg,
+  .coming-soon path,
+  .soon-label {
+    color: inherit;
+  }
+
+  .soon-label {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 9px;
+    line-height: 1;
   }
 
   .label,
