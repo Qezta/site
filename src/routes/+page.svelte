@@ -3,7 +3,7 @@
   import SiteFooter from "$lib/components/SiteFooter.svelte";
 
   const mainSiteUrl = "https://divit.qezta.com";
-  const logoSrc = "/qezta.gif";
+  const logoSrc = "./qezta.gif";
   const logoAlt = "Qezta Logo";
   const contacts = [
     { purpose: "General enquiries", email: "hello@qezta.com" },
@@ -56,6 +56,17 @@
 <SourceLink repo="https://github.com/Qezta/site" />
 
 <style lang="scss">
+  /* Use the same captured shader frame only when WebGL is unavailable. */
+  :global(body.portfolio-static::before) {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: #000 var(--shader-grain) repeat;
+    background-size: 256px 256px;
+  }
+
   .placeholder-container {
     display: flex;
     flex-direction: column;
