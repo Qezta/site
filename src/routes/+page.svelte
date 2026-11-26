@@ -14,7 +14,10 @@
 </script>
 
 <div class="placeholder-container">
-  <img src={logoSrc} alt={logoAlt} class="logo" />
+  <div class="logo-mark">
+    <img src={logoSrc} alt={logoAlt} class="logo" />
+    <span class="trademark-symbol" aria-hidden="true">™</span>
+  </div>
 
   <h1>Under Development</h1>
 
@@ -82,10 +85,27 @@
     gap: 1.5rem;
   }
 
-  .logo {
+  .logo-mark {
+    position: relative;
+    width: 100%;
     max-width: 250px;
-    height: auto;
     margin-bottom: 1rem;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .trademark-symbol {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    color: #f5f5f5;
+    font:
+      1.125rem/1 system-ui,
+      sans-serif;
   }
 
   h1,
