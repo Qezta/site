@@ -114,6 +114,9 @@
     </div>
   </nav>
   <p class="network-note">Also available on IPFS and Tor.</p>
+  <p class="trademark-note">
+    The Qezta torus logo, including its animated version, is a trademark of Qezta.
+  </p>
 </footer>
 
 <style>
@@ -171,17 +174,20 @@
 
   .label,
   .network-note,
+  .trademark-note,
   a {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     font-size: 12px;
   }
 
   .label,
-  .network-note {
+  .network-note,
+  .trademark-note {
     color: #aaa;
   }
 
-  .network-note {
+  .network-note,
+  .trademark-note {
     flex-basis: 100%;
     margin: 0;
     line-height: 1.6;

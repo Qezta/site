@@ -4,7 +4,7 @@
 
   const mainSiteUrl = "https://divit.qezta.com";
   const logoSrc = "./qezta.gif";
-  const logoAlt = "Qezta Logo";
+  const logoAlt = "Animated Qezta torus logo";
   const contacts = [
     { purpose: "General enquiries", email: "hello@qezta.com" },
     { purpose: "Security reports", email: "security@qezta.com" },
