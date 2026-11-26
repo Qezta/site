@@ -115,8 +115,9 @@
   </nav>
   <p class="network-note">Also available on IPFS and Tor.</p>
   <p class="trademark-note">
-    The Qezta torus logo, including its animated version, is a trademark of Qezta.
+    The Qezta torus logo, including its animated version, is a trademark of Qezta (OPC) Pvt. Ltd.
   </p>
+  <p class="trademark-note">© 2025–2026 Qezta (OPC) Pvt. Ltd. All rights reserved.</p>
 </footer>
 
 <style>
